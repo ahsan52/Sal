@@ -1,0 +1,247 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>digital</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/datpicker.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.js.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</head>
+<style>
+.btn {
+	padding: 20px 25px;
+	color: #FFF;
+	border-radius: 0;
+      transition: .2s;
+  }   .btn:hover, .btn:focus {
+	background-color: #FFF;
+	color: #FFF;
+  }
+</style>
+<body>
+<div class="navbar navbar-inverse" style="border:none">
+	<div class="container-fluid"><img src="image/header.png" />
+    <img src="image/dsofts.png"  class="pull-right"/>
+  </div>
+   
+    <!--*****************Buttons**************-->
+     
+<div class="container-fluid" style="background: #09F">
+<div class="row">
+<div class="col-md-1">
+</div>
+</div>
+<div class="navbar">
+	<a href="#" data-toggle="tooltip" title="Stock Notifications!"><img src="image/iconstock.png"/></a>
+    <a href="#" data-toggle="tooltip" title="Receiveable"><img src="image/iconreceiveable.png"/></a>
+    <a href="#" data-toggle="tooltip" title="Payable"><img src="image/iconpayable.png"/></a>
+    
+	<ul class="btn-group">
+   
+		<a href="#" class="btn btn-lg"><span class="glyphicon glyphicon-home"></span> Dashboard</a>
+        <a href="#" class="btn btn-lg"><span class="glyphicon glyphicon-list"></span> Activity</a>
+        <a href="#" class="btn btn-lg"><span class="glyphicon  glyphicon-cog"></span> Setup</a>
+        <a href="#" class="btn btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span> Voucher</a>
+        <a href="#" class="btn btn-lg"><span class="glyphicon glyphicon-book"></span> Reports</a>
+      </ul>
+         <a href="#" class="btn btn-lg" style="float:right" data-toggle="tooltip" title="Logout"><span class="glyphicon glyphicon-off"></span></a>
+</div>
+</div>
+</div>
+				<!--buttn--->
+<div class="container-fluid">
+
+	<ul style="float:right">
+   
+		<a href="#" class="btn btn-md" style="background:green"><span class="glyphicon glyphicon-save"></span> Save Changes</a>
+        <a href="#" class="btn btn-md" style="background: #C60"><span class="glyphicon glyphicon-refresh"></span> Reset</a>
+        <a href="#" class="btn btn-md" style="background:red"><span class="glyphicon  glyphicon-trash"></span> Delete</a>
+        <a href="#" class="btn btn-md" style="background: #CCF"><span class="glyphicon glyphicon-print"></span> Print</a>
+  </ul>
+       
+
+<!--***********************tabmenu*******************-->
+		<h3><span class="glyphicon glyphicon-shopping-cart"></span> Purchase Voucher</h3>
+			<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Add/Update Purchase Voucher</a></li>
+  <li><a data-toggle="tab" href="#menu1">Search Purchase Voucher</a></li>
+  
+  
+ 
+</ul>
+
+<div class="tab-content">
+<!--1st navtab start-->
+  <div id="home" class="tab-pane fade in active">
+<form role="form">
+	<div class="form-group">
+    <!--1st row star-->
+    <br>
+   		<div class="row">					
+  		<div class="col-md-1 col-xs-12 col-sm-12">
+        	<Span>Vr#</Span>
+            <input type="number" class="form-control" placeholder="0" style="border-radius:0px" >
+        </div>
+        <div class="col-md-3  col-xs-12 col-sm-12">
+        	<span>Order#</span>
+            <input type="text" class="form-control" style="border-radius:0px" >
+        </div>
+        <!--datepicker-->
+        <div class="col-md-4 col-xs-12 col-sm-12">
+        <span>Date:</span>
+            <div class="form-group">
+                <div class="input-group date datepicker-me" data-provider="datepicker" id='datetimepicker5'>
+                   <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar" style="border-radius:0px"></span>
+                    </span> <input type='text' class="form-control disabled" id="datepicker" readonly="readonly" value="08/08/2016" disabled  style="border-radius:0px"/>
+                    
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker5').datetimepicker({
+					formate:"dd-mm-yyyy",
+                    defaultDate: "11/1/2013",
+                    disabledDates: [
+                        moment("12/25/2013"),
+                        new Date(2013, 11 - 1, 21),
+                        "11/22/2013 00:53"
+                    ]
+                });
+            });
+        </script>
+        <!--**********-->
+        <div class="col-md-1 col-xs-12 col-sm-12">
+        <label></label>
+        <div class="input-group">
+  			<span class="input-group-addon" style="border-radius:0px">sms</span>
+  <input type="checkbox" class="form-control" style="border-radius:0px">
+		</div>
+</div>
+        
+        
+        </div><!--1st Row END-->
+        
+        <!--2nd ro strt-->
+        <div class="row">
+        <div class="col-md-4 col-xs-12 col-sm-12">
+        	<span>Supplier</span>
+            <select class="form-control" style="border-radius:0px">
+            <option>Chose account</option>
+            <option>Chose account1</option>
+            <option>Chose account2</option>
+            <option>Chose account3</option>
+            </select>
+        </div>
+        <div class="col-md-4 col-xs-12 col-sm-12">
+        	<span for="tr1">Transporter</span>
+            <select class="form-control" id="tr1" style="border-radius:0px">
+            <option>Select transporter</option>
+            <option>Transporter1</option>
+            <option>Transporter2</option>
+            <option>Transporter3</option>
+           </select>
+        </div>
+        <div class="col-md-1 col-xs-12 col-sm-12">
+        <span>Bilty#<span>
+        <input type="text"  class="form-control" style="border-radius:0px">
+        </div>
+        </div><!--2nd row end-->
+        <br>
+        <!--3rd row start-->
+        <div class="row">
+        <div class="col-md-4 col-xs-12 col-sm-12">
+        	<span for="sel1">Wherehouse</span>
+            <select class="form-control" id="sel1" style="border-radius:0px">
+            <option>Select</option>
+            <option>wherehouse1</option>
+            <option>wherehouse2</option>
+            <option>wherehouse3</option>
+            </select>
+        </div>
+        <!--colm-->
+        <div class="col-md-5 col-xs-12 col-sm-12">
+        <span>Remarks</span>
+        <input type="text" class="form-control" style="border-radius:0px">
+        </div>
+        </div><!--3rd row end-->
+        </div><!--End group form div-->
+</form>
+<!--input text container-->
+<div class="container-fluid bg-info">
+
+	<div class="form-group">
+    <br>
+   		<div class="row">					
+  		<div class="col-md-1 col-xs-12 col-sm-12">
+        	<span>Barcode#</span>
+            <input type="text" class="form-control" style="border-radius:0px" >
+        </div>
+       <div class="col-md-4 col-xs-12 col-sm-12">
+        	<span>items#</span>
+            <select class="form-control" title="Chose items" placeholder="Choose items...." style="border-radius:0px">
+            <option value="N/A">Choose items......</option>
+            <option>Camera</option>
+            <option>Laptops</option>
+            <option>Computers</option>
+            <option>Books</option>
+            </select> 
+        </div><!--colm end-->
+        <div class="col-md-1 col-xs-12 col-sm-12">
+        	<span>QTY</span>
+            <input type="text" class="form-control" style="border-radius:0px">
+        </div>
+        <div class="col-md-1 col-xs-12 col-sm-12">
+        	<span>Rate</span>
+            <input type="text" class="form-control" style="border-radius:0px">
+        </div>
+        <div class="col-md-1 col-xs-12 col-sm-12">
+        	<span>Amount<span>
+            <input type="text" class="form-control"  disabled style="border-radius:0px">
+        </div>
+        <div class="col-md-1 col-xs-12 col-sm-12">
+        	<span>discount</span>
+            <input type="text" class="form-control" placeholder="%" style="border-radius:0px">
+        </div>
+        <div class="col-md-1 col-xs-12 col-sm-12">
+        	<span>Sub total</span>
+            <input type="text" class="form-control" placeholder="Total" disabled style="border-radius:0px">
+        </div> 
+        </div><!--row end-->
+      </div><!--form group End-->
+      
+        
+<br>
+</div><!--container end-->
+<!--table start-->
+<div class="table-responsive">
+<table class="table table-striped table-bordered">
+<th>
+#
+</th>
+<th>Items Name</th>
+<th>Ware house</th>
+<th>Qty</th>
+<th>Rate</th>
+<th>Amount</th>
+<th>Dis</th>
+<th>Sub Total</th>
+<th>action</th>
+
+</table></div><!--table responsive div end-->
+</div><!--1st navtab contant End-->
+
+<!---2nd navtab contant start-->
+  <div id="menu1" class="tab-pane fade">
+    <h2>Chandler Bing, Guitarist</h2>
+    <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+  </div><!---2nd tab and tab contant END-->
+ 
+</div><!--tab contant End-->ksjdfijsj
+</div>
+</body>
+</html>
