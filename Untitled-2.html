@@ -1,0 +1,227 @@
+<div class="digimeg-nav-wrap">
+	<ul class="digimeg-group digimeg-main-nav">
+		<li>
+			<a style="color: white; cursor: pointer;" class="logout btnLogoutUser" title="Logout" href="http://mis.digitalmanager.pk/index.php/user/logout" name="subMenuLink"><i class="icon icon-off icon-large"></i></a>
+		</li>
+		<li style="display: none;">
+			<a href="http://mis.digitalmanager.pk/index.php/utility/notifications" data-subnav="notifications-subnav" class="digimeg-nav-item">
+				<i class="icon icon-bell"></i>
+				<span class="label label-warning notif-count">0</span>
+			</a>
+		</li>
+		<li class="hidden">
+			<a href="#" data-subnav="accounts-subnav" class="digimeg-nav-item">
+				<i class="icon icon-money"></i> Accounts
+				<span class="digimeg-active-mark" style="display: none;"></span>
+			</a>
+		</li>
+		<li class="hidden">
+			<a href="#" data-subnav="inventory-subnav" class="digimeg-nav-item">
+				<i class="icon icon-gift"></i> Inventory
+				<span class="digimeg-active-mark" style="display: none;"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#" data-subnav="sale-subnav" class="digimeg-nav-item">
+				<i class="icon icon-shopping-cart"></i> Reports
+				<span class="digimeg-active-mark" style="display: none;"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#" data-subnav="purchase-subnav" class="digimeg-nav-item">
+				<i class="icon icon-shopping-cart"></i> Voucher
+				<span class="digimeg-active-mark" style="display: none;"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#" data-subnav="setup-subnav" class="digimeg-nav-item">
+				<i class="icon icon-cog"></i> Setup
+				<span class="digimeg-active-mark" style="display: none;"></span>
+			</a>
+		</li>
+		
+		<li class="CompanyFeed">
+			<a href="http://mis.digitalmanager.pk/index.php/company/feed"> <i class="icon icon-list"></i> Activity</a>
+		</li>
+		<li>
+			<a href="http://mis.digitalmanager.pk/index.php/user/dashboard">
+				<span> <i class="icon icon-home"></i> Dashboard</span>
+			</a>
+		</li>
+		<li class="payables">
+			<a class="notif-nav-btn" title="Payables" data-toggle="tooltip" href="http://mis.digitalmanager.pk/index.php/report/payables#payablesTab"><img src="http://mis.digitalmanager.pk/application/assets/img/icon-payable.png" alt="img here"><span class="payable-result-count notif-count-lbl" style="visibility: hidden;">0</span></a>
+		</li>
+		<li class="receivables">
+			<a class="notif-nav-btn" title="Receivables" data-toggle="tooltip" href="http://mis.digitalmanager.pk/index.php/report/payables#receiveablesTab"><img src="http://mis.digitalmanager.pk/application/assets/img/icon-receiveable.png" alt="img here"><span class="receiveable-result-count notif-count-lbl" style="visibility: hidden;">0</span></a>
+		</li>
+		<li class="stocknotifs">
+			<a href="http://mis.digitalmanager.pk/index.php/item/stockNotifications" class="notif-nav-btn" title="Stock Notifications" data-toggle="tooltip"><img src="http://mis.digitalmanager.pk/application/assets/img/icon-stock.png" alt="img here"><span class="stocknotif-result-count notif-count-lbl" style="visibility: visible;">2</span></a>
+		</li>
+	</ul>
+	<ul class="digimeg-nav-down-content digimeg-sub-nav">
+		<li id="notifications-subnav" style="">
+			<div class="digimeg-nav-item-content digimeg-group">
+				<div class="panel panel-warning notifs">
+					Nothing new here!
+				</div>
+			</div>
+		</li>
+		<li id="setup-subnav" style="">
+			<div class="digimeg-nav-item-content digimeg-group">
+				<div class="digimeg-nav-chunk">
+					<h2>Setup</h2>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Company</li>
+						<!-- <li class="nav-head">Vouchers</li> -->
+														<li class="addCompany"><a href="http://mis.digitalmanager.pk/index.php/company/updateCompany"> <i class="icon icon-home"></i> Company Profile</a></li>
+														    <li class="PartyInfo"><a href="http://mis.digitalmanager.pk/index.php/party/addnew" name="subMenuLink"> <i class="icon icon-user"></i> Chart of Account</a></li>
+																					    <li class="Transporter"><a href="http://mis.digitalmanager.pk/index.php/transporter/addnew" name="subMenuLink"> <i class="icon icon-road"></i> Add New Transporter</a> </li>
+																									    <!-- <li class="Transporter"><a href="http://pms.digitalmanager.pk/index.php/transporter/addnew" name="subMenuLink">Add New Transporter</a> </li> -->
+						<li class="nav-head">Lists</li>
+						<!-- <li class="nav-head">Reports</li> -->
+														    <li class="htmPartyView"><a href="http://mis.digitalmanager.pk/index.php/party/addnew#allParties" name="subMenuLink"> <i class="icon icon-user"></i> Accounts List</a></li>
+																					    <li class="ChartOfAccounts"><a href="http://mis.digitalmanager.pk/index.php/report/chartOfAccounts" name="subMenuLink"> <i class="icon icon-user"></i> Chart of Accounts</a></li>
+																					    <li class="Transporter"><a href="http://mis.digitalmanager.pk/index.php/transporter/addnew#viewall" name="subMenuLink"> <i class="icon icon-road"></i> Transporters List</a> </li>
+												</ul>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Inventory</li>
+							<!-- <li class="nav-head">Inventory</li> -->
+														    <li class="ItemInfo"><a href="http://mis.digitalmanager.pk/index.php/item/addnew" name="subMenuLink"> <i class="icon icon-gift"></i> Add New Product</a> </li>
+																																			    <li class="Godown"><a href="http://mis.digitalmanager.pk/index.php/godown/addnew" name="subMenuLink"> <i class="icon icon-home"></i> Add New Godown</a> </li>
+							
+						<li class="nav-head">Lists</li>
+
+							<!-- <li class="nav-head">Reports</li> -->
+														    <li class="htmItemView"><a href="http://mis.digitalmanager.pk/index.php/item/report" name="subMenuLink"> <i class="icon icon-gift"></i> Item List</a></li>
+																					    <li class="htmCatagoryViewBold"><a href="http://mis.digitalmanager.pk/index.php/report/category" name="subMenuLink"> <i class="icon icon-tag"></i> Category View</a></li>
+																					    <li class="htmSubCatagoryView"><a href="http://mis.digitalmanager.pk/index.php/report/subcategory" name="subMenuLink"> <i class="icon icon-tag"></i> Sub Category View</a></li>
+																					    <li class="htmGodwonView"><a href="http://mis.digitalmanager.pk/index.php/report/godown" name="subMenuLink"> <i class="icon icon-home"></i> Godown View</a></li>
+												</ul>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Account</li>
+						<!-- <li class="nav-head">Account</li> -->
+														    <li class="Currency"><a href="http://mis.digitalmanager.pk/index.php/currency/addnew" name="subMenuLink"> <i class="icon icon-money"></i> Add Currency</a> </li>
+																					    <li class="AccountLevels"><a href="http://mis.digitalmanager.pk/index.php/account_level/addnew" name="subMenuLink"> <i class="icon icon-plus"></i> Add Account Levels</a></li>
+													<li class="nav-head">Lists</li>
+						<!-- <li class="nav-head">Utilities</li> -->
+															<li class="db_backup"><a href="http://mis.digitalmanager.pk/index.php/feature/db_backup"> <i class="icon icon-download"></i> Backup Database</a></li>
+																			</ul>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Staff</li>
+						<!-- <li class="nav-head">Staff</li> -->
+																					    <li class="SaleMan"><a href="http://mis.digitalmanager.pk/index.php/officer/addnew" name="subMenuLink"> <i class="icon icon-user"></i> Add New SalesMan</a> </li>
+																					<li class="updateProfile"><a href="http://mis.digitalmanager.pk/index.php/user/updateProfile" name="subMenuLink"> <i class="icon icon-edit"></i> Update Profile</a></li>
+						<li class="nav-head">Lists</li>
+						<!-- <li class="nav-head">Reports</li> -->
+														    <li class="htmSalesManView"><a href="http://mis.digitalmanager.pk/index.php/report/salesmen" name="subMenuLink"> <i class="icon icon-user"></i> SalesMan View</a></li>
+										
+					</ul>
+				</div>
+			</div>
+		</li>
+	
+		<li id="purchase-subnav" style="">
+			<div class="digimeg-nav-item-content digimeg-group">
+				<div class="digimeg-nav-chunk">
+					<h2>Voucher</h2>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Purchase</li>
+												    <li class="PurchaseOrderVoucher"><a href="http://mis.digitalmanager.pk/index.php/purchase/order" name="subMenuLink"> <!-- <i class="icon icon-truck"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\3.png" alt="img here"> Purchase Order Voucher</a></li>
+																		    <li class="PurchaseVoucher"><a href="http://mis.digitalmanager.pk/index.php/purchase" name="subMenuLink"> <!-- <i class="icon icon-shopping-cart"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\1.png" alt="img here"> Purchase Voucher</a> </li>
+																								    <li class="PurchaseReturn"><a href="http://mis.digitalmanager.pk/index.php/purchasereturn" name="subMenuLink"> <!-- <i class="icon icon-shopping-cart"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\2.png" alt="img here"> Purchase Return Voucher</a> </li>
+																	  
+					</ul>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Sale</li>
+														    <li class="SaleOrderVoucher"><a href="http://mis.digitalmanager.pk/index.php/sale/order" name="subMenuLink"> <!-- <i class="icon icon-truck"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\5.png" alt="img here"> Sale Order</a> </li>
+							    <li class="SaleOrderVoucher"><a href="http://mis.digitalmanager.pk/index.php/sale/quotation" name="subMenuLink"> <!-- <i class="icon icon-shopping-cart"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\4.png" alt="img here"> Sale Quotation</a> </li>
+																					    <li class="SaleVoucher"><a href="http://mis.digitalmanager.pk/index.php/sale" name="subMenuLink"> <!-- <i class="icon icon-shopping-cart"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\1.png" alt="img here"> Sale Voucher</a> </li>
+																					    <li class="SaleRetrunVoucher"><a href="http://mis.digitalmanager.pk/index.php/salereturn"> <!-- <i class="icon icon-shopping-cart"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\6.png" alt="img here"> Sale Return</a> </li>
+													
+					</ul>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Inventory</li>
+																		    <li class="StockNavigation"><a href="http://mis.digitalmanager.pk/index.php/stocknavigation" name="subMenuLink"> <!-- <i class="icon icon-road"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\7.png" alt="img here"> Stock Transfer</a> </li>
+																			<li class="openingStockVoucher"><a href="http://mis.digitalmanager.pk/index.php/purchase/openingStock" name="subMenuLink"> <!-- <i class="icon icon-briefcase"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\3.png" alt="img here"> Opening Stock</a></li>
+											</ul>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Account</li>
+												    <li class="CashPayment"><a href="http://mis.digitalmanager.pk/index.php/payment/pay" name="subMenuLink"> <!-- <i class="icon icon-money"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\2.png" alt="img here"> Cash Payment</a> </li>
+																		    <li class="CashPayment"><a href="http://mis.digitalmanager.pk/index.php/payment/rec" name="subMenuLink"> <!-- <i class="icon icon-money"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\2.png" alt="img here"> Cash Receipt</a> </li>
+												 						    <li class="ChequeIssueVoucher"><a href="http://mis.digitalmanager.pk/index.php/payment/chequeIssue" name="subMenuLink"> <!-- <i class="icon icon-credit-card"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\2.png" alt="img here"> Cheque Paid Voucher</a></li>
+																		    <li class="ChequeReceiveVoucher"><a href="http://mis.digitalmanager.pk/index.php/payment/chequeReceive" name="subMenuLink"> <!-- <i class="icon icon-credit-card"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\2.png" alt="img here"> Cheque Receive Voucher</a></li>
+																		    <li class="GeneralVoucher"><a href="http://mis.digitalmanager.pk/index.php/journal" name="subMenuLink"> <!-- <i class="icon icon-money"></i> --> <img src="http://mis.digitalmanager.pk/application\assets\img\icon\2.png" alt="img here"> Journal voucher</a> </li>
+											</ul>
+				</div>
+			</div>
+		</li>
+		<li id="sale-subnav" style="">
+			<div class="digimeg-nav-item-content digimeg-group">
+				<div class="digimeg-nav-chunk">
+					<h2>Reports</h2>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+					<li class="nav-head">Purchase</li>
+												    <li class="htmPurchaseView"><a href="http://mis.digitalmanager.pk/index.php/report/purchase" name="subMenuLink"> <i class="icon icon-shopping-cart"></i> Purchase Reports</a></li>
+																		    <li class="htmPurchaseReturnView"><a href="http://mis.digitalmanager.pk/index.php/report/purchasereturn" name="subMenuLink"> <i class="icon icon-shopping-cart"></i> Purchase Return</a></li>
+																		    <li class="htmPurchaseImportView dont-show"><a href="http://mis.digitalmanager.pk/index.php/report/purchaseImport" name="subMenuLink"> <i class="icon icon-shopping-cart"></i> Purchase Import Reports</a></li>
+						  
+					</ul>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Sale</li>
+														    <li class="htmSaleView"><a href="http://mis.digitalmanager.pk/index.php/report/sale" name="subMenuLink"> <i class="icon icon-shopping-cart"></i> Sale Reports</a></li>
+																					    <li class="htmSaleView"><a href="http://mis.digitalmanager.pk/index.php/report/saleorder" name="subMenuLink"> <i class="icon icon-shopping-cart"></i> Sale Order Report</a></li>
+																					    <li class="htmSaleReturnView"><a href="http://mis.digitalmanager.pk/index.php/report/salereturn" name="subMenuLink"> <i class="icon icon-shopping-cart"></i> Sale Return Reports</a></li>
+														    <li class="htmSaleTargetReport"><a href="http://mis.digitalmanager.pk/index.php/report/salesMenTarget" name="subMenuLink"> <i class="icon icon-user"></i> Salesperson Target</a></li>
+						
+					</ul>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Inventory</li>
+												<li class="htmClosingStockValue"><a href="http://mis.digitalmanager.pk/index.php/report/closingStock" name="subMenuLink"> <i class="icon icon-gift"></i> Closing Stock Values</a></li>
+																		    <li class="ItemLedger"><a href="http://mis.digitalmanager.pk/index.php/item/ledger" name="subMenuLink"> <i class="icon icon-gift"></i> Item Ledger</a> </li>
+																								    <li class="stockNavReports"><a href="http://mis.digitalmanager.pk/index.php/report/stockNavigation" name="subMenuLink"> <i class="icon icon-road"></i> Stock Transfer Report</a></li>
+																		    <li class="InventoryReports"><a href="http://mis.digitalmanager.pk/index.php/report/inventory" name="subMenuLink"> <i class="icon icon-briefcase"></i> Inventory Reports</a></li>
+																		    <li class="StockOrderReports"><a href="http://mis.digitalmanager.pk/index.php/report/stockOrderReport" name="subMenuLink"> <i class="icon icon-truck"></i> Stock Order Reports</a></li>
+											</ul>
+				</div>
+				<div class="digimeg-nav-chunk">
+					<ul>
+						<li class="nav-head">Account</li>
+												    <li class="ChartOfAccounts"><a href="http://mis.digitalmanager.pk/index.php/report/chartOfAccounts" name="subMenuLink"> <i class="icon icon-user"></i> Chart of Accounts</a></li>
+																		    <li class="AccountLedger"><a href="http://mis.digitalmanager.pk/index.php/account_ledger" name="subMenuLink"> <i class="icon icon-money"></i> Account Ledger</a> </li>
+																		    <li class="TrialBalance"><a href="http://mis.digitalmanager.pk/index.php/trial_balance" name="subMenuLink"> <i class="icon icon-money"></i> Trial Balance</a> </li>
+						    <li class="TrialBalance"><a href="http://mis.digitalmanager.pk/index.php/trial_balance/sixcol" name="subMenuLink"> <i class="icon icon-money"></i> 6 Column Trial Balance</a> </li>
+																		    <li class="AccountReports"><a href="http://mis.digitalmanager.pk/index.php/report/accounts" name="subMenuLink"> <i class="icon icon-money"></i> Account Reports</a></li>
+																		    <li class="htmProfitLosView"><a href="http://mis.digitalmanager.pk/index.php/report/profitloss" name="subMenuLink"> <i class="icon icon-random"></i> Product Wise Profit/Loss</a></li>
+						    <li class="htmProfitLosView"><a href="http://mis.digitalmanager.pk/index.php/report/detailedprofitloss" name="subMenuLink"> <i class="icon icon-random"></i> Trading Profit/Loss</a></li>
+																		    <li class="CashFlow"><a href="http://mis.digitalmanager.pk/index.php/report/cashFlow" name="subMenuLink"> <i class="icon icon-money"></i> Cash Flow Statement</a> </li>
+																			<li class="AgingSheet"><a href="http://mis.digitalmanager.pk/index.php/report/agingSheet"> <i class="icon icon-calendar"></i> Aging Sheet</a></li>
+																		    <li class="ChequeReport"><a href="http://mis.digitalmanager.pk/index.php/report/cheques" name="subMenuLink"> <i class="icon icon-credit-card"></i> Cheque Report</a> </li>
+											    <li class="AccountReports"><a href="http://mis.digitalmanager.pk/index.php/report/invoiceAging" name="subMenuLink"> <i class="icon icon-calendar"></i> Invoice Aging</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
